@@ -43,9 +43,5 @@ public class LCA<Key>{
 
     return (left_lca != null) ? left_lca : right_lca;
   }
-    
-  public static void main(String[] args) {
-    	
-  }
 }
 
