@@ -6,15 +6,17 @@ The grading focus is on your test code.
 public class LCA<Key>{
 
   public Node<Key> root;
+  public boolean visited0 = false;
+  public boolean visited1 = false;
   
-    public Key lowestCommonAncestor(Key node0, Key node1){
-    Node<Key> lca = findLCA(root, node0, node1);
+  public Key lowestCommonAncestor(Key node0, Key node1){
+  Node<Key> lca = findLCA(root, node0, node1);
 
-    if(visited0 && visited1)
-      return lca.key;
+  if(visited0 && visited1)
+    return lca.key;
 
-      return null;
-    }
+    return null;
+  }
 
   private Node<Key> findLCA(Node<Key> root, Key key0, Key key1) {
 
