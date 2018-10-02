@@ -5,7 +5,7 @@ public class LCA<Key>{
 
   private Node<Key> root;
     
-	private static class Node<Key>{
+  private static class Node<Key>{
     Key key;
     Node<Key> left, right;
 
